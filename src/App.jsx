@@ -1,22 +1,38 @@
-import YouTubeSearch from './components/youtubeVideos.jsx';
+import YouTubeSearch from "./components/youtubeVideos.jsx";
+import "./style/main.css";
 
 function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <header style={{ textAlign: 'center', padding: '20px', backgroundColor: '#f1f1f1' }}>
+    <div className="app-container">
+      <header>
         <h1>Application de recherche de mail Youtube</h1>
-        <p>By Wyterrr</p>
+        <p>Trouvez facilement les contacts des créateurs YouTube</p>
       </header>
-      <div style={{ flex: '1' }}>
+      <main>
         <YouTubeSearch />
-      </div>
-      <footer style={{ textAlign: 'center', backgroundColor: '#f1f1f1' }}>
+      </main>
+      <footer>
         <p>By Wyterrr / Ywen Piret - 2025 - Version 1.0</p>
-        <p>Github: <a href="https://github.com/Wyterrr" target="_blank" rel="noopener noreferrer">Wyterrr</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ywenpiret" target="_blank" rel="noopener noreferrer">Ywen Piret</a></p>
+        <p>
+          <a
+            href="https://github.com/Wyterrr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>{" "}
+          •
+          <a
+            href="https://www.linkedin.com/in/ywenpiret"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
       </footer>
     </div>
   );
 }
 
-export default App  
+export default App;
